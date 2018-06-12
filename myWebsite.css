@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Include full size background image for home screen */
+html .home {
+    background: url()) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+body {
+    background-color: #fff;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+
+/* Style the top navigation bar */
+nav {
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+/* Style the navigation bar links and add a transistion property */
+nav a {
+    float: right;
+    display: block;
+    font-size: 18px;
+    color: #ddd;
+    padding: 15px 30px;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    transition: background-color 1s;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+/* Transition color on hover */
+nav a:hover {
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 75px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 75px;
+}
