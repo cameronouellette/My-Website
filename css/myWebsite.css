@@ -2,22 +2,21 @@
     box-sizing: border-box;
 }
 
-/* Include full size background image for home screen */
-html .home {
-    background: url()) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
 body {
     background-color: #fff;
     font-family: 'Vollkorn', Georgia, Times, serif;
     font-size: 20px;
     line-height: 25px;
     margin: 0;
+}
+
+/* Include full size background image for home screen */
+body .home {
+    background: url()) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Style the top navigation bar */
@@ -45,7 +44,7 @@ nav a {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
-/* Transition color on hover */
+/* Transition color on hover for navbar links */
 nav a:hover {
     background-color: #000;
 }
