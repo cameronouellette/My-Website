@@ -3,14 +3,17 @@
 }
 
 body {
-    background-color: #fff;
-    font-family: 'Vollkorn', Georgia, Times, serif;
-    font-size: 20px;
-    line-height: 25px;
+    background: #DDD;
     margin: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
-/* Include full size background image for home screen */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Include full size background image for home screen
 body .home {
     background: url()) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,46 +21,86 @@ body .home {
     -o-background-size: cover;
     background-size: cover;
 }
+*/
+
+/* Header */
+
+header {
+    background: #333;
+    border-bottom: 5px solid #F00;
+}
 
 /* Style the top navigation bar */
 nav {
-    overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
-    width: 100%;
     top: 0;
+}
+
+nav ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
 }
 
-/* Style the navigation bar links and add a transistion property */
-nav a {
-    float: right;
+nav li {
     display: block;
-    font-size: 18px;
-    color: #ddd;
-    padding: 15px 30px;
-    width: 25%;
     text-align: center;
-    text-decoration: none;
-    -webkit-transition: color 1s;
-    transition: background-color 1s;
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    width: 100%;
+    padding: 20px 0;
+    transition: background 1s;
 }
 
-/* Transition color on hover for navbar links */
-nav a:hover {
-    background-color: #000;
+nav a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 1000;
+    font-size: 1.5rem;
+}
+
+nav a#home {
+    color: #F2D;
+}
+
+nav a#about {
+    color: #0DF;
+}
+
+nav a#projects {
+    color: #FC0;
+}
+
+nav a#contact {
+    color: #0F3;
+}
+
+nav a#home,
+nav a#about,
+nav a#projects,
+nav a#contact {
+    opacity: 0.65;
+    transition: opacity 0.5s;
+}
+
+nav a#home:hover,
+nav a#about:hover,
+nav a#projects:hover,
+nav a#contact:hover {
+    opacity: 1;
 }
 
 h1 {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    font-size: 50px;
-    line-height: 50px;
-    margin: 75px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
     font-size: 20px;
     line-height: 25px;
     margin: 75px;
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 80%;
+    }
 }
